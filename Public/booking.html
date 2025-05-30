@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Food Lover's Restaurant</title>
+</head>
+<body>
+     <nav>
+      <div class="logo">FOOD LOVER'S RESTAURANT</div>
+      <div class="nav-links">
+      <a href="/index.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="menu">Menu</a>
+      <a href="./booking.html">Booking</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <section class="services">
+    <div class="wrapper">
+     <h1>Our Restaurant Services</h1>
+     <div class="container">
+        <div class="service-card">
+          <h3>Dine-In</h3>
+          <p>Enjoy delicious meals in a cozy atmosphere with full table service.</p>
+       </div>
+       <div class="service-card">
+         <h3>Online Reservations</h3>
+         <p>Book your table easily online with real-time availability.</p>
+       </div>
+      </div>
+       <button onclick="openPopup()" class="btn">Make A Booking</button>
+       <div id="popup" class="popup">
+         <div class="popup-content">
+            <form onsubmit="return submitBooking()">
+             <h2>Book a Table</h2>
+             <label>Name:</label>
+             <input type="text" id="name" required>
+
+             <label>Phone Number:</label>
+             <input type="tel" id="phone" required>
+
+             <label>Date:</label>
+             <input type="date" id="date" required>
+
+             <label>Time:</label>
+             <input type="time" id="time" required>
+
+             <label>Number of Guests:</label>
+             <select id="guests" required>
+               <option value="1">1</option>
+               <option value="2">2</option>
+               <option value="3">3</option>
+               <option value="4">4</option>
+               <option value="5+">5+</option>
+             </select>
+
+    <button class="btn" type="submit">Book Now</button>
+  </form>
+
+  <div id="confirmation" class="popup">
+    Booking confirmed! We look forward to seeing you.
+  </div>
+            <button onclick="closePopup()">&times</button>
+         </div>
+       </div>
+    </div>
+    <img src="../Images/service img/di_an_h-HJxeQkbpWrk-unsplash.jpg">
+ </section>
+ <script src="../script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

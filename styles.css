@@ -22,6 +22,13 @@ nav {
   font-weight: bold;
 }
 
+nav p {
+  color: #cc874f;;
+  font-style: cursive;
+  margin-top: 0;
+  font-weight: 100;
+}
+
 .nav-links {
   display: flex;
   gap: 25px;
@@ -117,7 +124,7 @@ section {
 }
 
 
-.container {
+ .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;    
@@ -153,16 +160,16 @@ p {
 }
 
 em {
-  color:#3c763d;;
+  color:#04AA6D;
 }
 
 /* booking html */
 
 .wrapper {
-  max-width: 1000px;
+  max-width: 50%;
   margin: 50px auto;
   padding: 20px;
-   background: white;
+  background: white;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -173,12 +180,12 @@ h1 {
 
 
 .service-card {
-  background: #fafafa;
+  background: #fafafa;;
   padding: 20px;
   border-radius: 8px;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .service-card h3 {
@@ -199,6 +206,7 @@ h1 {
   padding: 10px 20px;
   transition: transform 0.3s ease;
   margin-left: 40%;
+  margin-top: 70px;
 }
 
 .btn:hover {
@@ -239,4 +247,26 @@ input, select {
   border-radius: 5px;
   margin: 20px auto;
   width: 800px;
+}
+
+/* contact page */
+.contact .container {
+  background-color: #e5f0e5;
+}
+
+.contact .container p {
+  margin-bottom: 20px;
+}
+
+.contact .container h4 {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+  color: #8f5c32;
+}
+
+/* footer */
+
+.footer-container {
+  background-color: #8f5c32;
 }

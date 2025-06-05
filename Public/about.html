@@ -82,6 +82,28 @@
       <a href="./booking.html">
             <button class="btn">-Make A Booking-</button>
         </a>
+
+    
+     <h1>Our Restaurant</h1>
+     <div class="gallery">
+       <img src="../Images/gallery/1.jpg" onclick="openLightbox(0)" alt="1">
+       <img src="../Images/menu/2.jpg" onclick="openLightbox(1)" alt="2">
+       <img src="../Images/gallery/3.jpg" onclick="openLightbox(2)" alt="3">
+       <img src="../Images/menu/4.jpg" onclick="openLightbox(3)" alt="4">
+       <img src="../Images/gallery/5.jpg" onclick="openLightbox(4)" alt="5">
+       <img src="../Images/menu/6.jpg" onclick="openLightbox(5)" alt="6">
+       <img src="../Images/gallery/7.jpg" onclick="openLightbox(6)" alt="7">
+       <img src="../Images/menu/8.jpg" onclick="openLightbox(7)" alt="8">
+       <img src="../Images/menu/9.jpg" onclick="openLightbox(8)" alt="9">
+       <img src="../Images/gallery/10.jpg" onclick="openLightbox(9)" alt="10">
+     </div>
+
+     <div id="lightbox" class="lightbox">
+       <span class="close" onclick="closeLightbox()">&times;</span>
+       <img id="lightbox-img" src="" class="lightbox-image">
+       <button class="prev" onclick="changeSlide(-1)">❮</button>
+       <button class="next" onclick="changeSlide(1)">❯</button>
+     </div>
  </section>
 
 </body>

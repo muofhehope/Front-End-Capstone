@@ -7,14 +7,14 @@
     <title>Food Lover's Restaurant</title>
 </head>
 <body>
-     <nav>
+   <nav>
       <div class="logo">FOOD LOVER'S RESTAURANT</div>
       <div class="nav-links">
-      <a href="/index.html">Home</a>
-      <a href="./about.html">About</a>
-      <a href="./menu.html">Menu</a>
-      <a href="./booking.html">Booking</a>
-      <a href="./contact.html">Contact Us</a>
+        <a href="/index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./menu.html">Menu</a>
+        <a href="./booking.html">Booking</a>
+        <a href="./contact.html">Contact Us</a>
     </div>
   </nav>
   <section class="services">
@@ -30,9 +30,9 @@
          <p>Book your table easily online with real-time availability.</p>
        </div>
       </div>
-      <button onclick="openPopup()" class="btn">-Book Now-</button>
-       <div id="popup" class="popup">
-         <div class="popup-content">
+   </div>
+       <div class="model">
+         <div class="model-content">
             <form onsubmit="return submitBooking()">
              <h2>Book a Table</h2>
              <label>Name:</label>
@@ -56,50 +56,28 @@
                <option value="5+">5+</option>
              </select>
            </form>
-           <button class="btn" type="submit">-Book-</button> 
+           <button id="submitbooking" class="btn">Submit Booking-</button> 
 
-           <div id="confirmation" class="popup">
-             Booking confirmed! We look forward to seeing you.
+           <!-- Confirmation Modal -->
+           <div class="moda" id="confirmation">
+             <div class="modal-content">
+               <h3>Confirm Your Booking</h3>
+               <div id="bookingDetails"></div>
+               <button id="confirmBtn" class="btn">Confirm</button>
+               <button onclick="closeModal('confirmModal')" class="btn cancel">Cancel</button>
+             </div>
            </div>
-           <button onclick="closePopup()">&times</button>
+            <!-- Success Modal -->
+           <div class="moda" id="successModal">
+             <div class="modal-content">
+               <h3>Booking Confirmed!</h3>
+               <p>Your reservation has been successfully made.</p>
+               <button onclick="closeModal('successModal')" class="btn">Close</button>
+             </div>
+           </div>
          </div>
        </div>
-   </div>
-    <img src="../Images/service img/di_an_h-HJxeQkbpWrk-unsplash.jpg">
  </section>
  <script src="../script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

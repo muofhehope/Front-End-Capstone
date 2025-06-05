@@ -48,21 +48,12 @@ nav p {
 
 /* wrapper section */
 
-section {
-  margin-top: 30px;
-}
-
-
 .wrapper-container {
-  max-width: 70%;
+  max-width: 100%;
   position: relative;
   margin: auto;
-}
-
-
-.wrapper-container img {
-  width: 100%;
-  height: 50%;
+  margin-top: 30px;
+  margin-bottom:90px;
 }
 
 
@@ -77,41 +68,97 @@ section {
   text-align: center;
 }
 
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
+h1 {
+  margin-top: 90px;
+  text-align: center;
+ color: #7a4c06ea;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  padding: 20px;
+  width: 100%;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 100;
   top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 80%;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+
 }
 
 
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+
+/* main  */
+.main {
+  margin-top: 90px;
 }
 
-.active {
-  background-color: #717171;
+.main h2 {
+  color: #4CAF50;
 }
-
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-
 
 /* about page section */
 
@@ -173,10 +220,6 @@ em {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h1 {
-   text-align: center;
-    color: #7a4c06ea;
-}
 
 
 .service-card {
@@ -211,7 +254,7 @@ h1 {
 
 .btn:hover {
   transform: translateY(-5px);
-}
+} 
 
 
 .services img  {
@@ -222,12 +265,12 @@ h1 {
   
 }
 
-/* when clicked button */
+/* booking section */
 form {
-  max-width: 600px;
+  max-width: 60%;
   margin: 50px auto;
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: #e5f0e5;
   border-radius: 8px;
 }
 
@@ -239,19 +282,43 @@ input, select {
   border-radius: 4px;
 }
 
-.popup {
-  display: none;
+
+.model {
   background: #dff0d8;
   color: #3c763d;
   padding: 10px;
   border-radius: 5px;
   margin: 20px auto;
-  width: 800px;
+  width: 40%;
 }
+
+
+.modal {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  background-color: white;
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+} 
+
+.modal-content {
+  background-color: #f5e9e9f1;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  bottom: 0; 
+} */
+
 
 /* contact page */
 .contact .container {
-  background-color: #e5f0e5;
+  background-color: #a3b6df;
 }
 
 .contact .container p {
@@ -265,8 +332,84 @@ input, select {
   color: #8f5c32;
 }
 
+
+/* menu container */
+.menu-container {
+  max-width: 50%;
+  margin: 50px auto;
+  background: #fff;
+  padding: 70px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.menu-section {
+   margin-bottom: 30px;
+}
+
+.menu-section h2 {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  color: #4CAF50;
+  
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item-name {
+  font-weight: bold;
+}
+
+.menu-item-price {
+  color: #888;
+}
+
 /* footer */
 
 .footer-container {
   background-color: #8f5c32;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+
+.footer-container .container {
+  display: block;
+}
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

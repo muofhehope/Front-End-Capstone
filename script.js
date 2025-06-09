@@ -37,44 +37,49 @@ function updateLightbox() {
 }
 
 
+// booking form
+  const bookingForm = document.getElementById('bookingForm');
+  const confirmModal = document.getElementById('confirmModal');
+  const finalModal = document.getElementById('finalModal');
+  const confirmText = document.getElementById('confirmText');
 
-function submitBooking() {
-  // Collect form values
-  const name = document.getElementById('name').value;
-  const phone = document.getElementById('phone').value;
-  const date = document.getElementById('date').value;
-  const time = document.getElementById('time').value;
-  const guests = document.getElementById('guests').value;
+  let bookingData = {};
 
-  // Show confirmation modal
-  const details = `
-    <p><strong>Name:</strong> ${name}</p>
-    <p><strong>Phone:</strong> ${phone}</p>
-    <p><strong>Date:</strong> ${date}</p>
-    <p><strong>Time:</strong> ${time}</p>
-    <p><strong>Guests:</strong> ${guests}</p>
-  `;
-  document.getElementById('bookingDetails').innerHTML = details;
-  document.getElementById('confirmation').style.display = 'block';
+  bookingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
 
-  return false; // Prevent default form submission
-}
+    // Gather form data
+    bookingData = {
+      name: document.getElementById('name').value,
+      email: document.getElementById('email').value,
+      phone: document.getElementById('phone').value,
+      date: document.getElementById('date').value,
+      time: document.getElementById('time').value,
+      guests: document.getElementById('guests').value,
+    };
 
-function closeModal(id) {
-  document.getElementById(id).style.display = 'none';
-}
+    confirmText.innerHTML = `
+      <strong>Name:</strong> ${bookingData.name}<br>
+      <strong>Email:</strong> ${bookingData.email}<br>
+      <strong>Phone:</strong> ${bookingData.phone}<br>
+      <strong>Date:</strong> ${bookingData.date}<br>
+      <strong>Time:</strong> ${bookingData.time}<br>
+      <strong>Guests:</strong> ${bookingData.guests}
+    `;
 
-document.getElementById('confirmBtn').onclick = function () {
-  document.getElementById('confirmation').style.display = 'none';
-  document.getElementById('successModal').style.display = 'block';
-}
+    confirmModal.style.display = 'flex';
+  });
 
+  document.getElementById('confirmBtn').onclick = function() {
+    confirmModal.style.display = 'none';
+    finalModal.style.display = 'flex';
+    bookingForm.reset(); // Optional: reset form
+  };
 
+  document.getElementById('cancelBtn').onclick = function() {
+    confirmModal.style.display = 'none';
+  };
 
-
-
-
-
-
-
-
+  function closeFinalModal() {
+    finalModal.style.display = 'none';
+  }

@@ -18,47 +18,74 @@
     </div>
   </nav>
 
-  <div class="menu-container">
+   <div class="menu-container">
     <h1>🍽️ Food Lover's Restaurant</h1>
     <p>menu</p>
 
+    <h2>Appetizers and Main course</h2>
+    <ul class="menu">
+        <li onclick="openModal('BBQ With sour Sauce and Salad/ Chips', '../Images/menu/1.jpg', 'A juicy grilled burger with cheese and lettuce.')">
+          <span class="menu-item-name">BBQ With sour Sauce and Salad/ Chips</span>
+          <span class="menu-item-price">R149.00</span>
+        </li>
+        <li onclick="openModal('Chicken and Mashroom, BBQ and Bacon, Cheese Pizza', '../Images/menu-2/pizza.jpg', 'Small R60, Medium R100, Large R150')">
+          <span class="menu-item-name">Pizza</span>
+          <span class="menu-item-price">R100.50</span>
+        </li>
+        <li onclick="openModal('Sushi', '../Images/menu-2/Chicken.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Chicken Wings</span>
+          <span class="menu-item-price">R120.00</span>
+        </li>
+          <li onclick="openModal('Sushi', '../Images/menu-2/spaghetti.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Spaghetti</span>
+          <span class="menu-item-price">R98.99</span>
+        </li>
+          <li onclick="openModal('Sushi', '../Images/menu-2/burger.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Burger</span>
+          <span class="menu-item-price">R139.40</span>
+        </li>
+     </ul>
 
-    <div class="menu-section">
-      <h2>Appetizers</h2>
-      <div class="menu-item">
-        <span class="menu-item-name">Spring Rolls</span>
-        <span class="menu-item-price">$5.99</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Garlic Bread</span>
-        <span class="menu-item-price">$4.50</span>
-      </div>
-    </div>
+     <h2>Dessert</h2>
+     <ul class="menu">
+        <li onclick="openModal('Burger', '../Images/menu-2/Chocolate.jpg', 'A juicy grilled burger with cheese and lettuce.')">
+          <span class="menu-item-name">Garlic Bread</span>
+          <span class="menu-item-price">$4.50</span>
+        </li>
+        <li onclick="openModal('Pizza', '../Images/menu-2/waffles.jpg', 'A slice of cheesy pepperoni pizza.')">
+          <span class="menu-item-name">Garlic Bread</span>
+          <span class="menu-item-price">$4.50</span>
+        </li>
+        <li onclick="openModal('Sushi', 'images/sushi.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Garlic Bread</span>
+          <span class="menu-item-price">$4.50</span>
+        
+     </ul>
 
-    <div class="menu-section">
-      <h2>Main Courses</h2>
-      <div class="menu-item">
-        <span class="menu-item-name">Grilled Chicken</span>
-        <span class="menu-item-price">$12.99</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Spaghetti Bolognese</span>
-        <span class="menu-item-price">$11.50</span>
-      </div>
-    </div>
+     <h2>Dinks</h2>
+     <ul class="menu">
+        <li onclick="openModal('Burger', '../Images/menu-2/coke.jpg', 'A juicy grilled burger with cheese and lettuce.')">
+          <span class="menu-item-name">Coke</span>
+          <span class="menu-item-price">R29.99</span>
+        </li>
+        <li onclick="openModal('Chocolate Coffee, black TEA, Roobois', '../Images/menu-2/coffee.jpg', 'A slice of cheesy pepperoni pizza.')">
+          <span class="menu-item-name">Coffee</span>
+          <span class="menu-item-price">R50.00</span>
+        </li>
+        <li onclick="openModal('Sushi', 'images/sushi.jpg', 'Fresh sushi rolls with salmon and avocado.')">
+          <span class="menu-item-name">Garlic Bread</span>
+          <span class="menu-item-price">$4.50</span>
+     </ul>
 
-    <div class="menu-section">
-      <h2>Desserts</h2>
-      <div class="menu-item">
-        <span class="menu-item-name">Cheesecake</span>
-        <span class="menu-item-price">$6.00</span>
-      </div>
-      <div class="menu-item">
-        <span class="menu-item-name">Chocolate Brownie</span>
-        <span class="menu-item-price">$5.50</span>
-      </div>
-    </div>
-  </div>
+   <div id="popupModal" class="modal">
+     <div class="modal-content">
+       <span class="close-2" onclick="closeModal()">&times;</span>
+       <h2 id="modalTitle"></h2>
+       <img id="modalImage" src="" alt="">
+       <p id="modalText"></p>
+     </div>
+   </div>
+</div>
 
   <footer>
   <div class="footer-container">
@@ -104,5 +131,7 @@
     <p>&copy; 2025 All rights reserved.</p>
   </div>
 </footer>
+
+<script src="../script.js"></script>
   </body>
   </html>

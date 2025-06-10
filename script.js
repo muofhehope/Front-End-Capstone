@@ -38,42 +38,42 @@ function updateLightbox() {
 
 
 // booking form
-  const bookingForm = document.getElementById('bookingForm');
-  const confirmModal = document.getElementById('confirmModal');
-  const finalModal = document.getElementById('finalModal');
-  const confirmText = document.getElementById('confirmText');
+const bookingForm = document.getElementById('bookingForm');
+const confirmModal = document.getElementById('confirmModal');
+const finalModal = document.getElementById('finalModal');
+const confirmText = document.getElementById('confirmText');
 
-  let bookingData = {};
+let bookingData = {};
 
-  bookingForm.addEventListener('submit', function(e) {
-    e.preventDefault();
+bookingForm.addEventListener('submit', function(e) {
+  e.preventDefault();
 
-    // Gather form data
-    bookingData = {
-      name: document.getElementById('name').value,
-      email: document.getElementById('email').value,
-      phone: document.getElementById('phone').value,
-      date: document.getElementById('date').value,
-      time: document.getElementById('time').value,
-      guests: document.getElementById('guests').value,
-    };
+ bookingData = {
+   name: document.getElementById('name').value,
+   email: document.getElementById('email').value,
+   phone: document.getElementById('phone').value,
+   date: document.getElementById('date').value,
+   time: document.getElementById('time').value,
+   guests: document.getElementById('guests').value,
+  };
 
-    confirmText.innerHTML = `
-      <strong>Name:</strong> ${bookingData.name}<br>
-      <strong>Email:</strong> ${bookingData.email}<br>
-      <strong>Phone:</strong> ${bookingData.phone}<br>
-      <strong>Date:</strong> ${bookingData.date}<br>
-      <strong>Time:</strong> ${bookingData.time}<br>
-      <strong>Guests:</strong> ${bookingData.guests}
+  confirmText.innerHTML = `
+    <strong>Name:<strong> ${bookingData.name}<br>
+    <strong>Email:</strong> ${bookingData.email}<br>
+    <strong>Phone:</strong> ${bookingData.phone}<br>
+    <strong>Date:</strong> ${bookingData.date}<br>
+    <strong>Time:</strong> ${bookingData.time}<br>
+    <strong>Guests:</strong> ${bookingData.guests}
     `;
 
     confirmModal.style.display = 'flex';
   });
 
+
   document.getElementById('confirmBtn').onclick = function() {
     confirmModal.style.display = 'none';
     finalModal.style.display = 'flex';
-    bookingForm.reset(); // Optional: reset form
+    bookingForm.reset(); 
   };
 
   document.getElementById('cancelBtn').onclick = function() {
@@ -83,3 +83,26 @@ function updateLightbox() {
   function closeFinalModal() {
     finalModal.style.display = 'none';
   }
+
+
+
+  // menu
+
+      function openModal(title, imageUrl, description) {
+      document.getElementById('modalTitle').textContent = title;
+      document.getElementById('modalImage').src = imageUrl;
+      document.getElementById('modalImage').alt = title;
+      document.getElementById('modalText').textContent = description;
+      document.getElementById('popupModal').style.display = 'block';
+    }
+
+    function closeModal() {
+      document.getElementById('popupModal').style.display = 'none';
+    }
+
+    window.onclick = function(event) {
+      const modal = document.getElementById('popupModal');
+      if (event.target === modal) {
+        modal.style.display = 'none';
+      }
+    }

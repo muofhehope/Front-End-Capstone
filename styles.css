@@ -15,6 +15,9 @@ nav {
   align-items: center;
   background-color: #8f5c32;
   padding: 30px 150px;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
 }
 
 .logo {
@@ -384,11 +387,6 @@ button {
   max-width: 400px;
   text-align: center;
   border-radius: 5px;
-}
-
-#confirmText {
-  color: black;
-  font-style: normal;
 }
 
 #finalModal p {

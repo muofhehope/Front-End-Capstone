@@ -67,7 +67,7 @@ bookingForm.addEventListener('submit', function(e) {
     `;
 
     confirmModal.style.display = 'flex';
-  });
+});
 
 
   document.getElementById('confirmBtn').onclick = function() {
@@ -88,21 +88,21 @@ bookingForm.addEventListener('submit', function(e) {
 
   // menu
 
-      function openModal(title, imageUrl, description) {
-      document.getElementById('modalTitle').textContent = title;
-      document.getElementById('modalImage').src = imageUrl;
-      document.getElementById('modalImage').alt = title;
-      document.getElementById('modalText').textContent = description;
-      document.getElementById('popupModal').style.display = 'block';
-    }
+function openModal(title, imageUrl, description) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalImage').src = imageUrl;
+  document.getElementById('modalImage').alt = title;
+  document.getElementById('modalText').textContent = description;
+  document.getElementById('popupModal').style.display = 'block';
+}
 
-    function closeModal() {
-      document.getElementById('popupModal').style.display = 'none';
-    }
+function closeModal() {
+  document.getElementById('popupModal').style.display = 'none';
+}
 
-    window.onclick = function(event) {
-      const modal = document.getElementById('popupModal');
-      if (event.target === modal) {
-        modal.style.display = 'none';
-      }
-    }
+window.onclick = function(event) {
+  const modal = document.getElementById('popupModal');
+  if (event.target === modal) {
+     modal.style.display = 'none';
+  }
+}

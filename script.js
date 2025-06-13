@@ -1,14 +1,14 @@
 const images = [
-  "../Images/gallery/1.jpg",
-  "../Images/menu/2.jpg",
-  "../Images/gallery/3.jpg",
-  "../Images/menu/4.jpg",
-  "../Images/gallery/5.jpg",
-  "../Images/menu/6.jpg",
-  "../Images/gallery/7.jpg",
-  "../Images/menu/8.jpg",
-  "../Images/menu/9.jpg",
-  "../Images/gallery/10.jpg"
+  "./Images/gallery/1.jpg",
+  "./Images/menu/2.jpg",
+  "./Images/gallery/3.jpg",
+  "./Images/menu/4.jpg",
+  "./Images/gallery/5.jpg",
+  "./Images/menu/6.jpg",
+  "./Images/gallery/7.jpg",
+  "./Images/menu/8.jpg",
+  "./Images/menu/9.jpg",
+  "./Images/gallery/10.jpg"
  
 ];
 

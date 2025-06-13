@@ -394,7 +394,9 @@ button {
   font-style: normal;
 }
 
-
+#confirmText {
+  color: #333232;
+}
 
 
 /* contact page */

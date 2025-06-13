@@ -68,7 +68,7 @@ bookingForm.addEventListener('submit', function(e) {
   };
 
   confirmText.innerHTML = `
-  Name: ${bookingData.name}<br>
+  <strong>Name:</strong> ${bookingData.name}<br>
    <strong>Email:</strong> ${bookingData.email}<br>
    <strong>Phone:</strong> ${bookingData.phone}<br>
    <strong>Date:</strong> ${bookingData.date}<br>

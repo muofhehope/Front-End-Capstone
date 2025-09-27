@@ -16,4 +16,4 @@ A user-friendly frontend website for a fictional restaurant, "Food Lover's Resta
 2. *Encourage bookings*: Streamlined table reservation process.
 3. *Improve user experience*: Simple and intuitive interface for quick information discovery.
 
-NB: Not Responsive
+NB: Not Responsive only available for laptops. 

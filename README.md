@@ -17,3 +17,14 @@ A user-friendly frontend website for a fictional restaurant, "Food Lover's Resta
 3. *Improve user experience*: Simple and intuitive interface for quick information discovery.
 
 NB: Not Responsive only available for laptops. 
+
+DEMO:
+
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-47-35" src="https://github.com/user-attachments/assets/d6c397e4-96e4-4bb8-bf8e-7c8646240861" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-48-28" src="https://github.com/user-attachments/assets/6bbaebc4-acf9-45d1-8dbb-1f8a1448c960" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-48-41" src="https://github.com/user-attachments/assets/bfdd2976-a795-49b3-b8fe-fb4a692e03b7" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-48-50" src="https://github.com/user-attachments/assets/8d227e8a-3f4f-4163-8f84-c993ca0bab5e" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-48-56" src="https://github.com/user-attachments/assets/b64e9967-1be3-4cf0-8674-87891a5bc8ac" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-47-46" src="https://github.com/user-attachments/assets/0dfd89fe-4d68-435f-a431-1d83d0676e54" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-47-35" src="https://github.com/user-attachments/assets/c75df13d-7d97-4d4e-97be-e68cf5ed5fc1" />
+<img width="1909" height="937" alt="Screenshot from 2026-01-22 12-48-07" src="https://github.com/user-attachments/assets/7c3b4713-7bca-437b-abef-abd29e2ff737" />

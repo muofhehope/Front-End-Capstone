@@ -1,20 +1,88 @@
 # Front-End-Capstone
+# 🍽️ Food Lover's Restaurant Website
 
-*"Food Lover's Restaurant" Website*
+A complete **multi-page restaurant website** built with **HTML, CSS, and JavaScript**. This project showcases a modern restaurant brand with an interactive gallery, dynamic menu popups, and a booking system with confirmation modals.
 
-A user-friendly frontend website for a fictional restaurant, "Food Lover's Restaurant," providing essential information about the restaurant's menu, booking options, and location details.
+---
 
-*Key Features:*
+## 🚀 Features
 
-1. *Menu Section*: Comprehensive menu listings with dish names and descriptions.
-2. *Booking Section*: Easy table reservations with options for date, time, and number of guests.
-3. *Location Section*: Restaurant address, contact information, and directions.
+* Responsive multi-page website
+* Image gallery with **custom lightbox** navigation
+* Interactive food menu with popup details
+* Table booking form with confirmation modal
+* Clean navigation across pages (Home, About, Menu, Booking, Contact)
+* Reusable JavaScript logic across pages
 
-*Goals:*
+---
 
-1. *Provide essential information*: Clear understanding of the restaurant's offerings.
-2. *Encourage bookings*: Streamlined table reservation process.
-3. *Improve user experience*: Simple and intuitive interface for quick information discovery.
+## 🛠️ Technologies Used
+
+### Frontend
+
+* **HTML5** – Semantic page structure
+* **CSS3** – Layout, styling, and responsiveness
+* **Vanilla JavaScript** – Interactivity and DOM manipulation
+
+---
+
+## 📂 Project Structure
+
+```
+food-lovers-restaurant/
+│
+├── index.html
+├── styles.css
+├── script.js
+├── Public/
+│   ├── about.html
+│   ├── menu.html
+│   ├── booking.html
+│   └── contact.html
+├── Images/
+│   ├── gallery/
+│   ├── menu/
+│   ├── menu-2/
+│   └── icons/
+```
+
+---
+
+## 🖼️ Key Functionality Explained
+
+### 📸 Image Gallery & Lightbox
+
+* Clicking an image opens a fullscreen lightbox
+* Users can navigate using **Next / Previous** buttons
+* Built using pure JavaScript (no external libraries)
+
+### 📋 Menu Popup
+
+* Clicking a menu item opens a modal
+* Displays food image, name, price, and description
+
+### 📅 Booking System
+
+* Users fill out a booking form
+* Confirmation modal displays entered details
+* Final confirmation message shown after approval
+
+---
+
+## ▶️ How to Run the Project
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/food-lovers-restaurant.git
+```
+
+2. Open the project folder
+
+3. Open `index.html` in your browser
+
+_No s
+
 
 NB: Not Responsive only available for laptops. 
 
